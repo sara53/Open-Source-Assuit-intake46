@@ -1,0 +1,9 @@
+== var -- let -- const 
+== pass by value & pass by refernce 
+== destrcuring
+== spread operator
+== rest paramter
+== default values
+== arrow function
+== string api
+== array api
