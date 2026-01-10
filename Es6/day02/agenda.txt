@@ -1,0 +1,10 @@
+== Object New Syntax (features)
+== object.keys
+== object.values
+== object.entries
+--------------------------------
+== async code execution in memory
+== promises
+    -- then - catch
+    -- asyn - await
+== fetch
