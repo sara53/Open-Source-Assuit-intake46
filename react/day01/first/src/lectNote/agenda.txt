@@ -1,0 +1,5 @@
+== install Nodejs
+== install using vite 
+    -- npm create vite@latest
+
+== npm run dev (in correct path)

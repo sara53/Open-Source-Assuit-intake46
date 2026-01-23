@@ -12,3 +12,8 @@ console.log(all.trackName);
 // export
 // export naming
 // export default
+
+///////////////////////////////////////
+// array == generator
+// object == iterator
+///////////////////////////////////////
