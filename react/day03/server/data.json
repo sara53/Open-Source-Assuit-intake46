@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "id": "e23d",
+      "name": "Book ",
+      "price": "100"
+    },
+    {
+      "id": "e626",
+      "name": "laptop",
+      "price": "123"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "name": "Ahmed Ali",
+      "email": "ahmed@example.com",
+      "grade": "A"
+    },
+    {
+      "id": "2",
+      "name": "Fatima Hassan",
+      "email": "fatima@example.com",
+      "grade": "B+"
+    },
+    {
+      "id": "3",
+      "name": "Mohamed Karim",
+      "email": "mohamed@example.com",
+      "grade": "A-"
+    }
+  ]
+}
