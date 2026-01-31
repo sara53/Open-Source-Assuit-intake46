@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
-import { addNewProduct, editProduct, getProductById } from "../api/productApi";
+import { getProductById } from "../api/productApi";
 import { useNavigate, useParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addProductAction } from "../store/slices/productSlice";
 
 export function ProductForm() {
+    const dispatch = useDispatch();;
     const [ product, setProduct ] = useState( {
         name: '',
         price: ''
@@ -33,13 +36,15 @@ export function ProductForm() {
     const productHandler = ( e ) => {
         e.preventDefault()
         if ( id == 0 ) {
-            addNewProduct( product ).then( () => {
+            dispatch( addProductAction( product ) ).then( () => {
+
                 navigate( "/products" )
-            } ).catch( () => { } )
+            } )
+            //dispactch(addProductAction(product))
         } else {
-            editProduct( id, product ).then( () => {
-                navigate( "/products" )
-            } ).catch( () => { } )
+            // dispatch(editAction)
+
+            navigate( "/products" )
         }
 
     }

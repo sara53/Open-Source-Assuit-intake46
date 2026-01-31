@@ -1,10 +1,8 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "../pages/Home";
-import { Products } from "../pages/Products";
-import { ProductDetails } from "../pages/ProductDetails";
-import { ProductForm } from "../pages/ProductForm";
-import { NotFound } from "../pages/NotFound";
+
+import { Home, ProductDetails, Products, NotFound, ProductForm, Counter } from '../pages'
+
 import { Sharedlayout } from "./Sharedlayout";
 
 
@@ -16,6 +14,7 @@ export default function Mainlayout() {
                 <Route path="/" element={<Sharedlayout />} >
                     <Route index element={<Home />} />
                     <Route path="products" element={<Products />} />
+                    <Route path="counter" element={<Counter />} />
                     <Route path="products/:id" element={<ProductDetails />} />
                     <Route path="products/:id/edit" element={<ProductForm />} />
                 </Route>
